@@ -1,5 +1,5 @@
 # JAVA_awsS3
-## bucket의 list를 조회하기
+## Select Bucket List
 ```
 final String KEY = Const.AWS_KEY_ID;
 final String SECRET = Const.AWS_SECRET_ACCESS_KEY;
