@@ -7,7 +7,7 @@ final String SECRET = Const.AWS_SECRET_ACCESS_KEY;
 BasicAWSCredentials credentials = new BasicAWSCredentials(KEY, SECRET);
 AmazonS3 s3Client = new AmazonS3Client(credentials);
 
-ListObjectsV2Request listObjects = new ListObjectsV2Request().withBucketName("app-apk-update");
+ListObjectsV2Request listObjects = new ListObjectsV2Request().withBucketName("bucketname");
 ListObjectsV2Result res = s3Client.listObjectsV2(listObjects);
 
 for (S3ObjectSummary myValue : res.getObjectSummaries()) {
